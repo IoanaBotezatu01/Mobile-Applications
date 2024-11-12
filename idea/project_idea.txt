@@ -1,0 +1,36 @@
+1-Short description
+
+This app will help people track their activities and tasks or plan future activities easily.
+The user can add an activity on a certain day and hour and they can select the duration of the activity.
+The user can select the priority level of the task/activity(ex: leisure time,routine,personal development,health,social,work,optional,family,critical or custom)
+the user can also delete an activity or update it.
+
+2-Domain details
+
+activity:
+-name: the name of the activity
+-day:the selected day for the activity
+-time: the hour for the activity
+-duration : how much time should the activity take
+-priority level :the type of activity
+-description :short desciption or details if needed
+
+3-CRUD
+create: the user creates an activity with all the fields from a separate page 
+read: the user can see all the activities chronologically ordered
+update: the user can modify the fields (move the activity in another day/at another hour,change the name or the details,select another priority level)
+delete: the user can delete an activity ,but before that, there will appear a confirmation message
+
+4-Persistence details
+the changes are saved for create /update/delete on the server and the local database too
+
+5-Offline device:
+
+the app lets the user add/modify delete entities locally
+create:the entities are stored in the local database
+read: list the locally saved entities
+update: can be applied only on the locally saved entities
+delete: the operation is performed on the local database
+
+When the app is online again,the changes from the local database are sent to the server
+
